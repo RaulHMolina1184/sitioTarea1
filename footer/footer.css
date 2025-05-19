@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #6eb4f9;
+  padding: 70px 0;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ===== Footer Columna General ===== */
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 25%;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #0b0f6c;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col a,
+.footer-col p {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 4px 5px;
+  font-size: 0.95rem;
+}
+
+/* ===== Sección "Destacados" ===== */
+/* Queda cubierta por .footer-col */
+
+/* ===== Sección "Dirección" ===== */
+.footer-col .text-secondary {
+  color: #cce6ff;
+  font-size: 0.9rem;
+}
+
+/* ===== Sección "Contáctenos" (ID específico para controlar espaciado) ===== */
+#footer-contact {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+#footer-contact a {
+  display: block;
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+#footer-contact a:hover {
+  color: #0b0f6c;
+  text-decoration: underline;
+}
+
+/* ===== Sección "Síganos" ===== */
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* ===== Copyright ===== */
+.footer-row.copyright {
+  justify-content: center;
+  text-align: center;
+  padding-top: 7vh;
+  display: flex;
+  width: 100%;
+  color: #cce6ff;
+}
+
+.footer-row .row:last-child p {
+  margin: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
